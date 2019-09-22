@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HammingTest" tests="9" skipped="4" failures="0" errors="0" timestamp="2019-09-22T02:06:37" hostname="Souviks-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="testCompleteDistanceInSingleLetterDifferentStrands" classname="HammingTest" time="0.001"/>
+  <testcase name="testNoDistanceBetweenEmptyStrands" classname="HammingTest" time="0.0"/>
+  <testcase name="testNoDistanceBetweenShortIdenticalStrands" classname="HammingTest" time="0.0"/>
+  <testcase name="testDisallowLeftEmptyStrand" classname="HammingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDistanceInLongIdenticalStrands" classname="HammingTest" time="0.0"/>
+  <testcase name="testDisallowRightEmptyStrand" classname="HammingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDistanceInLongDifferentStrands" classname="HammingTest" time="0.0"/>
+  <testcase name="testValidatesFirstStrandNotLonger" classname="HammingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testValidatesSecondStrandNotLonger" classname="HammingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
