@@ -1,9 +1,21 @@
-class ResistorColor {
-    int colorCode(String color) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
-    }
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-    String[] colors() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
-    }
+class ResistorColor {
+
+	private List<String> colorCodes;
+
+	public ResistorColor() {
+		this.colorCodes = new ArrayList<>(
+				Arrays.asList("black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"));
+	}
+
+	int colorCode(String color) {
+		return colorCodes.indexOf(color);
+	}
+
+	String[] colors() {
+		return this.colorCodes.toArray(new String[0]);
+	}
 }
