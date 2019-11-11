@@ -9,6 +9,20 @@
 # BlueJ files
 *.ctxt
 
+# Eclipse files
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -39,19 +53,5 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
-##############################
-## Eclipse
-##############################
-.settings/
-bin/
-tmp/
-.metadata
-.classpath
-.project
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.loadpath
+
 .sonarlint
