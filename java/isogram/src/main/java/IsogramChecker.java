@@ -1,18 +1,15 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 class IsogramChecker {
 
 	boolean isIsogram(String phrase) {
-		Map<Character, Integer> countMap = new HashMap<>();
+		Set<Character> countMap = new HashSet<>();
 
 		for (char ch : phrase.toCharArray()) {
-			char lowerCaseChar = Character.toLowerCase(ch);
-			if (Character.isAlphabetic(lowerCaseChar)) {
-				if (countMap.containsKey(lowerCaseChar)) {
-					return false;
-				}
-				countMap.put(lowerCaseChar, 0);
+
+			if (Character.isAlphabetic(ch) && !countMap.add(Character.toLowerCase(ch))) {
+				return false;
 			}
 
 		}
