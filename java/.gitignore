@@ -54,3 +54,4 @@ tmp/
 *~.nib
 local.properties
 .loadpath
+.sonarlint
