@@ -19,7 +19,6 @@ class LuhnValidator {
 		if (trimmed.length() < 2) {
 			return false;
 		}
-		
 
 		List<Integer> candidateList = new ArrayList<>();
 		for (char c : trimmed.toCharArray()) {
@@ -30,9 +29,8 @@ class LuhnValidator {
 		}
 
 		int sum = 0;
-		for (int i = 0; i < candidateList.size() ; i++) {
-			sum += valueOf(candidateList.get(candidateList.size() - i - 1), i+1);
-			
+		for (int i = 0; i < candidateList.size(); i++) {
+			sum += valueOf(candidateList.get(candidateList.size() - i - 1), i + 1);
 		}
 
 		return sum % 10 == 0;
